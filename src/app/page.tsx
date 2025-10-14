@@ -1,6 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import Overlay from "./components/overlay";
+import Hero from "./sections/hero";
+import VariablesCard from "./components/variablesCard";
+
 
 export default function Home() {
   const [h, setH] = useState(0);
@@ -30,21 +34,16 @@ export default function Home() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-cover bg-center" style={{ backgroundImage: "url('/2.jpg')" }}>
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
-      <div className="z-10 text-white text-center">
-        <h1 className="text-5xl font-bold">Welcome to the Flash Flood Risk Portal</h1>
-        <p className="mt-4 text-lg">Input your information, and with one click - you'll know your flash flood vulnerability.</p>
-      </div>
+    <main className="flex -z-15 min-h-screen flex-col items-center justify-center p-24 bg-cover bg-center" style={{ backgroundImage: "url('/gr10Background.png')" }}>
+      
+      {/* Overlay */}
+      <Overlay />
+      
+      <Hero />
 
       <div className="z-10 mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
-        <div className="bg-white bg-opacity-75 p-8 rounded-lg text-black">
-          <h2 className="text-3xl font-bold mb-4">Variables</h2>
-          <p><span className="font-bold">H</span> = Hazard Rating (1 - 5)</p>
-          <p><span className="font-bold">V</span> = Vulnerability Rating (1 - 5)</p>
-          <p><span className="font-bold">E</span> = Exposure Level (1 - 5)</p>
-          <p><span className="font-bold">C</span> = Capacity (1 - 5)</p>
-        </div>
+
+        <VariablesCard />
 
         <div className="bg-white bg-opacity-75 p-8 rounded-lg text-black">
           <h2 className="text-3xl font-bold mb-4">Calculate Here</h2>

@@ -1,9 +1,10 @@
 import React from 'react';
+import Overlay from '../components/overlay';
 
 const AboutPage = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-cover bg-center" style={{ backgroundImage: "url('/2.jpg')" }}>
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
+    <main className="flex min-h-screen flex-col items-center justify-center p-24 bg-cover bg-center" style={{ backgroundImage: "url('/gr10Background.png')" }}>
+      <Overlay />
       <div className="z-10 mt-20 bg-white bg-opacity-75 p-8 rounded-lg text-black w-full max-w-6xl">
         <h2 className="text-3xl font-bold mb-4">What is a Flash Flood?</h2>
         <p className="mb-4">

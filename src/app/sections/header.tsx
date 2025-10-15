@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -13,8 +14,8 @@ export default function Header() {
         </div>
         <nav>
           <ul className="flex space-x-4 sm:space-x-8 font-bold text-sm sm:text-base">
-            <li><a href="/" className="hover:underline">Home</a></li>
-            <li><a href="/about" className="hover:underline">About</a></li>
+            <li><Link href="/" className="hover:underline">Home</Link></li>
+            <li><Link href="/about" className="hover:underline">About</Link></li>
           </ul>
         </nav>
       </div>

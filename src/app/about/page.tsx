@@ -1,6 +1,6 @@
-import React from 'react';
-import Overlay from '../components/overlay';
-import ReferencesCard from '../components/referencesCard';
+import React from 'react'
+import Overlay from '../components/overlay'
+import ReferencesCard from '../components/referencesCard'
 
 const AboutPage = () => {
   return (
@@ -25,7 +25,7 @@ const AboutPage = () => {
 
       <ReferencesCard />
     </main>
-  );
-};
+  )
+}
 
 export default AboutPage

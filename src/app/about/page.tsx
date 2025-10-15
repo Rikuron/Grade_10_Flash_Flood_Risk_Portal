@@ -9,7 +9,7 @@ const AboutPage = () => {
       <div className="z-10 mt-20 bg-white bg-opacity-75 p-6 md:p-8 rounded-lg text-black w-full max-w-6xl">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">What is a Flash Flood?</h2>
         <p className="mb-4 text-sm md:text-base text-justify indent-6 md:indent-8">
-          A Flash Flood is characterized as a sudden, dangerous, and often devastating flood caused by heavy rainfall or other events like dam failures, resulting in a rapid rise in water levels within a few minutes or hours. Unlike a normal flood's gradual increase in water level, a flash flood occurs very quickly, sweeping debris along the way.
+          A Flash Flood is characterized as a sudden, dangerous, and often devastating flood caused by heavy rainfall or other events like dam failures, resulting in a rapid rise in water levels within a few minutes or hours. Unlike a normal flood&apos;s gradual increase in water level, a flash flood occurs very quickly, sweeping debris along the way.
         </p>
 
         <h2 className="text-2xl md:text-3xl font-bold mb-4">Purpose of the Website</h2>
